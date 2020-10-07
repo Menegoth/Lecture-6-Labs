@@ -1,0 +1,27 @@
+﻿<Window x:Class="Lecture6Lab1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lecture6Lab1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas HorizontalAlignment="Center" Height="419" VerticalAlignment="Center" Width="792"/>
+        <TextBox x:Name="leftTextBox" HorizontalAlignment="Center" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Margin="-350,0,0,0"/>
+        <TextBox x:Name="rightTextBox" HorizontalAlignment="Center" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Margin="150,0,0,0"/>
+        <ListBox x:Name="operationList" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="100" Margin="-100,0,0,0">
+            <ListBoxItem Content="+"/>
+            <ListBoxItem Content="-"/>
+            <ListBoxItem Content="*"/>
+            <ListBoxItem Content="/"/>
+            <ListBoxItem Content="%"/>
+        </ListBox>
+        <Label x:Name="equalsLabel" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="400,0,0,0"/>
+        <Label x:Name="resultsLabel" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="550,0,0,0"/>
+        <Button x:Name="calculateButton" Content="Calculate" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Margin="0,200,0,0" Click="calculateButton_Click"/>
+
+
+
+    </Grid>
+</Window>
