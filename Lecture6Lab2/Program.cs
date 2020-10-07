@@ -46,7 +46,7 @@ namespace Lecture6Lab2 {
 
         //division method
         public double Divide() {
-            return (nominator + 0.0) / denominator;
+            return Convert.ToDouble(nominator) / Convert.ToDouble(denominator);
         }
 
         //lowest common denominator method
