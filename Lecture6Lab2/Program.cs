@@ -15,11 +15,8 @@ namespace Lecture6Lab2 {
         private int nominator;
         private int denominator;
 
-        //constructor methods
-        public Fraction() {
-
-        }
-        public Fraction(int nominator, int denominator) {
+        //constructor method
+        public Fraction(int nominator = 1, int denominator = 2) {
 
             this.nominator = nominator;
             this.denominator = denominator;
@@ -90,8 +87,8 @@ namespace Lecture6Lab2 {
             Fraction testFraction2 = new Fraction();
 
             //testing set functions
-            testFraction2.SetNominator(1);
-            testFraction2.SetDenominator(2);
+            testFraction2.SetNominator(4);
+            testFraction2.SetDenominator(10);
 
             //testing get functions
             Console.WriteLine(testFraction.GetNominator());
@@ -99,6 +96,7 @@ namespace Lecture6Lab2 {
 
             //testing tostring and equals functions
             Console.WriteLine(testFraction.ToString());
+            Console.WriteLine(testFraction2.ToString());
             Console.WriteLine(testFraction.Equals(testFraction2));
 
             //testing math functions
